@@ -5,7 +5,7 @@ import { Menu, X, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const toggleMenu = () => {
@@ -95,3 +95,5 @@ const MobileNavLink = ({ to, onClick, children }: MobileNavLinkProps) => (
     {children}
   </Link>
 );
+
+export default Navbar;
